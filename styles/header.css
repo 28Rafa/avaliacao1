@@ -9,8 +9,10 @@
 
 .cabecalho{
     background-color: var(--branco);
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .container{
     display: flex;
@@ -23,7 +25,38 @@
 
 .lista-menu{
     display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--branco);
+    width: 60vw;
+    color: black;
+}
+
+
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked~ .lista-menu{
+    display: block;
+}
+
+.lista-menu_titulo{
+    color: var(--roxo-degrade);
+}
+
+.lista-menu_item{
+background-color: black;
+
+
 
 }
+
+.lista-menu_titulo, .lista-menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+
 
 
